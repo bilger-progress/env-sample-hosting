@@ -1,4 +1,4 @@
-# hello-world
+# env-sample
 
 ## Project setup
 ```
