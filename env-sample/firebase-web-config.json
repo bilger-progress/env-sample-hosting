@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "apiKey": "AIzaSyAMzlfDAnnBQiScMQmWXBqO9hal4YfRFqs",
+        "authDomain": "env-sample-dev.firebaseapp.com",
+        "databaseURL": "https://env-sample-dev.firebaseio.com",
+        "projectId": "env-sample-dev",
+        "storageBucket": "env-sample-dev.appspot.com",
+        "messagingSenderId": "348298177306",
+        "appId": "1:348298177306:web:5d63d754c73bfffb"
+    },
+    "prod": {
+        "apiKey": "AIzaSyDDtiAJwiucmx9AevaeXYbi5t5YBlouD0w",
+        "authDomain": "env-sample-prod.firebaseapp.com",
+        "databaseURL": "https://env-sample-prod.firebaseio.com",
+        "projectId": "env-sample-prod",
+        "storageBucket": "env-sample-prod.appspot.com",
+        "messagingSenderId": "697981339256",
+        "appId": "1:697981339256:web:3a59c16e24e4f9f9"
+    }
+}
