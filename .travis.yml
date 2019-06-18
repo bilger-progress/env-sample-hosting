@@ -10,7 +10,6 @@ script:
   - npm run build
   - npm run deploy
   branches:
-  only:
-  - master
-  - develop
-  
+    only:
+      - master
+      - develop
