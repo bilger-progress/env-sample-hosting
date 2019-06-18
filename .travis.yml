@@ -1,15 +1,18 @@
 language: node_js
 node_js:
   - 8
-script:
+before_install:
   - cd ./env-sample/
-  - npm install
+install: 
   - npm install -g firebase-tools
+  - npm install
+before_script:
   - if [ $TRAVIS_BRANCH == "develop" ]; then firebase use development; fi
   - if [ $TRAVIS_BRANCH == "master" ]; then firebase use production; fi
+script:
   - npm run build
   - npm run deploy
-  branches:
-    only:
-      - master
-      - develop
+branches:
+  only:
+  - master
+  - develop
