@@ -5,8 +5,8 @@ script:
   - cd ./env-sample/
   - npm install
   - npm install -g firebase-tools
-  - test $TRAVIS_BRANCH = "develop" &&  firebase use development
-  - test $TRAVIS_BRANCH = "master" && firebase use production
+  - test $TRAVIS_BRANCH = develop &&  firebase use development
+  - test $TRAVIS_BRANCH = master && firebase use production
   - npm run build
   - npm run deploy
   branches:
