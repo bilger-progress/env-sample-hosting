@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "env-sample-dev"
+    "development": "env-sample-dev",
+    "testing": "env-sample-test",
+    "production": "env-sample-prod"
   }
 }
