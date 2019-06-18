@@ -16,9 +16,12 @@ export default {
   },
   mounted() {
     firebaseApp
-      .auth()
+      .database()
+      .ref("env")
+      .once("value")
+      .then(dataSnap => dataSnap.val())
       // eslint-disable-next-line no-console
-      .onAuthStateChanged(user => console.log(user || "no user"));
+      .then(data => console.log(data));
   }
 };
 </script>
