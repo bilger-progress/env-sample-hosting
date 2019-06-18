@@ -17,6 +17,7 @@ export default {
   mounted() {
     firebaseApp
       .auth()
+      // eslint-disable-next-line no-console
       .onAuthStateChanged(user => console.log(user || "no user"));
   }
 };
