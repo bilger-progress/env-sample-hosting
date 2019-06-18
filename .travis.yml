@@ -8,7 +8,7 @@ install:
   - npm install
 before_script:
   - if [ $TRAVIS_BRANCH == "develop" ]; then firebase use development; fi
-  - if [ $TRAVIS_BRANCH == "master" ]; then firebase use production; fi
+  - if [ $TRAVIS_BRANCH == "master" ]; then node prepare-prod-build.js; firebase use production; fi
 script:
   - npm run build
   - npm run deploy

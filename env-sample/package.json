@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "firebase": "^6.2.0",
+    "replace-in-file": "^4.1.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
