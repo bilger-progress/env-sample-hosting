@@ -14,13 +14,13 @@ async function firebaseWebConfig() {
       new RegExp(webAppConf.appId)
     ],
     to: [
-      process.env['prod-apiKey'],
-      process.env['prod-authDomain'],
-      process.env['prod-databaseURL'],
-      process.env['prod-projectId'],
-      process.env['prod-storageBucket'],
-      process.env['prod-messagingSenderId'],
-      process.env['prod-appId']
+      process.env['prod_apiKey'],
+      process.env['prod_authDomain'],
+      process.env['prod_databaseURL'],
+      process.env['prod_projectId'],
+      process.env['prod_storageBucket'],
+      process.env['prod_messagingSenderId'],
+      process.env['prod_appId']
     ]
   };
   try {
@@ -41,7 +41,7 @@ async function firebaseRC() {
       new RegExp(webAppConf.projectId)
     ],
     to: [
-      process.env['prod-projectId']
+      process.env['prod_projectId']
     ]
   };
   try {
