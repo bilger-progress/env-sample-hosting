@@ -1,6 +1,5 @@
 {
   "projects": {
-    "development": "env-sample-dev",
-    "production": "env-sample-prod"
+    "default": "env-sample-dev"
   }
 }
